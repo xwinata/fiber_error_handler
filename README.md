@@ -10,6 +10,11 @@ This middleware provides a centralized way to handle errors and return consisten
 - Returns structured JSON responses with proper status codes
 - Easy to register using `App().Config().ErrorHandler`
 
+## Installation
+```bash
+go get github.com/xwinata/fiber_error_handler
+```
+
 ## Usage
 ### Define your custom error structure that implement `customError` interface
 ```
@@ -36,7 +41,7 @@ type customError interface {
 ### Register the Error Handler
 ```import (
 	"github.com/gofiber/fiber/v2"
-	fiberErrorHandler "github.com/yourusername/fiber-error-handler"
+	fiberErrorHandler "github.com/xwinata/fiber_error_handler"
 )
 
 func main() {
